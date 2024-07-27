@@ -6,11 +6,14 @@ TagManager:
   tags:
   - platform
   - Wall
+  - head_enemy
+  - nody_enemy
+  - body_enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - arrow
   - Water
   - UI
   - 

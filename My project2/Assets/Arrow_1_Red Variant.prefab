@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow_1_Red Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5751110313276125950, guid: a6095d3a4cf4bac4daf3d5d6f734169a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93,7 +97,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -115,7 +119,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.03, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
