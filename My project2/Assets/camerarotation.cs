@@ -15,16 +15,30 @@ public class MouseLookAround : MonoBehaviour
     public GameObject arrowPrefab; // Prefab of the object to shoot
     private Transform shootPoint; // Point from which to instantiate the arrow
     private GameObject currentArrow;
+    private TrailRenderer tail;
     private float arrowSpawnTimer = 2f;
     bool arrowShot = false;
     float starttime;
+    private AudioSource as1;
+    private GameObject child;
+    private audioWorking childScript;
     float endtime;
+    public GameObject quiver1;
+    public GameObject quiver2;
+    public GameObject quiver3;
+    private arrowAudio AudioScript;
 
     private void Start()
     {
         shootPoint = transform.Find("ShootPoint");
         CreateArrow();
-    
+        quiver1.SetActive(true);
+        as1 = GetComponent<AudioSource>();
+        Transform child = transform.Find("audio");
+        AudioScript = child.GetComponent<arrowAudio>();
+
+
+
     }
 
     void Update()
@@ -61,27 +75,36 @@ public class MouseLookAround : MonoBehaviour
             if (arrowShot == false)
             {
                 endtime = Time.time;
+                quiver1.SetActive(false);
                 if ((endtime - starttime) > 2)
                 {
+                    quiver3.SetActive(true);
                     shootForce = 25f;
                     Debug.Log(" larger than 2");
+                    AudioScript.playArrowSound(true);
                     ShootArrow();
                 }
                 else if ((endtime - starttime) > 1.5)
                 {
+                    quiver3.SetActive(true);
                     shootForce = 20f;
                     Debug.Log(" larger than 1.5");
+                    AudioScript.playArrowSound(true);
                     ShootArrow();
                 }
                 else if ((endtime - starttime) > 1)
                 {
+                    quiver2.SetActive(true);
                     shootForce = 15f;
                     Debug.Log(" larger than 1");
+                    AudioScript.playArrowSound(false);
                     ShootArrow();
                 }
                 else if ((endtime - starttime) < 1)
                 {
+                    quiver2.SetActive(true);
                     shootForce = 10f;
+                    AudioScript.playArrowSound(false);
                     Debug.Log(" smaller than 1");
                     ShootArrow();
                 }
@@ -91,10 +114,22 @@ public class MouseLookAround : MonoBehaviour
                 endtime = 0f;
             }
 
+           
+            StartCoroutine(ResetQuivers());
+
         }
-        
 
 
+
+    }
+
+    private IEnumerator ResetQuivers()
+    {
+        yield return new WaitForSeconds(0.4f);
+        quiver3.SetActive(false);
+        quiver2.SetActive(false);
+
+        quiver1.SetActive(true);
     }
 
     void ShootArrow()
@@ -110,6 +145,7 @@ public class MouseLookAround : MonoBehaviour
         // Shoot in the direction the camera is facing
         Vector3 vectorShoot = shootPoint.forward * shootForce;
         arrowRb.AddForce(vectorShoot, ForceMode.Impulse);
+        tail.enabled = true;
         arrowShot = true;
         arrowRb.useGravity = true;
         currentArrow = null;
@@ -125,6 +161,7 @@ public class MouseLookAround : MonoBehaviour
         Rigidbody arrowRb = currentArrow.GetComponent<Rigidbody>();
 
         arrowRb.useGravity = false;
+        tail = currentArrow.GetComponent<TrailRenderer>();
     }
 
     private IEnumerator reload()

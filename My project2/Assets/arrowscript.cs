@@ -8,6 +8,7 @@ public class arrowscript : MonoBehaviour
     
     private Rigidbody rb;
     public float velocity;
+    public TrailRenderer tail;
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
@@ -36,6 +37,7 @@ public class arrowscript : MonoBehaviour
             
             Debug.Log("headShot!!");
             rb.isKinematic = true;
+            tail.enabled = false;
         }
         else if (collision.gameObject.CompareTag("body_enemy"))
         {
@@ -49,6 +51,8 @@ public class arrowscript : MonoBehaviour
             transform.SetParent(enemyTransform);
             Debug.Log("bodyShot!!!");
             rb.isKinematic = true;
+            tail.enabled = false;
         }
+        
     }
 }

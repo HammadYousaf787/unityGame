@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.39f1 (4e1b0f82c39a) revision 5118735'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16225 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 7860 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2022.3.39f1\Editor\Unity.exe
+D:\unity\2022.3.39f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/githubRepository/unityGame/My project2
+D:/unityprojects/My project2
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50375
-Successfully changed project path to: D:/githubRepository/unityGame/My project2
-D:/githubRepository/unityGame/My project2
+50945
+Successfully changed project path to: D:/unityprojects/My project2
+D:/unityprojects/My project2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,69 +49,85 @@ D:/githubRepository/unityGame/My project2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11296]  Target information:
+Player connection [6488]  Target information:
 
-Player connection [11296]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3150873149 [EditorId] 3150873149 [Version] 1048832 [Id] WindowsEditor(7,Zaeems-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6488]  * "[IP] 192.168.18.212 [Port] 0 [Flags] 2 [Guid] 2679231661 [EditorId] 2679231661 [Version] 1048832 [Id] WindowsEditor(7,Hammads-Lappy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11296]  * "[IP] 192.168.10.173 [Port] 0 [Flags] 2 [Guid] 3150873149 [EditorId] 3150873149 [Version] 1048832 [Id] WindowsEditor(7,Zaeems-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [11296] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [11296] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 45.39 ms, found 3 plugins.
+Player connection [6488] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6488] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 6740.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.39f1 (4e1b0f82c39a)
-[Subsystems] Discovering subsystems at path D:/Unity/2022.3.39f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/githubRepository/unityGame/My project2/Assets
+[Subsystems] Discovering subsystems at path D:/unity/2022.3.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unityprojects/My project2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f9d)
     Vendor:   NVIDIA
-    VRAM:     3935 MB
-    Driver:   32.0.15.5612
+    VRAM:     3950 MB
+    Driver:   31.0.15.4633
 Initialize mono
-Mono path[0] = 'D:/Unity/2022.3.39f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Mono path[0] = 'D:/unity/2022.3.39f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2022.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003141 seconds.
-- Loaded All Assemblies, in  0.599 seconds
+Register platform support module: D:/unity/2022.3.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/unity/2022.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019970 seconds.
+- Loaded All Assemblies, in 17.636 seconds
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android SDK Build-tools component is not found. Make sure all tools are installed in the SDK manager.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.Android.AndroidSDKTools:UpdateToolsDirectories ()
+UnityEditor.Android.AndroidSDKTools:.ctor (string)
+UnityEditor.Android.AndroidSDKTools:CreateAndroidSDKTools (string)
+UnityEditor.Android.AndroidSDKTools:GetInstance<UnityEditor.Android.AndroidSDKTools> (UnityEditor.Android.AndroidSDKTools/InstanceCreator)
+UnityEditor.Android.AndroidSDKTools:GetInstance ()
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetMainThreadContext (bool)
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 364 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.398 seconds
-Domain Reload Profiling: 997ms
-	BeginReloadAssembly (230ms)
+- Finished resetting the current domain, in  0.972 seconds
+Domain Reload Profiling: 18608ms
+	BeginReloadAssembly (13241ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (59ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (225ms)
-		LoadAssemblies (229ms)
+	RebuildCommonClasses (1179ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (3140ms)
+		LoadAssemblies (13241ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (223ms)
-			TypeCache.Refresh (221ms)
-				TypeCache.ScanAssembly (200ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (3137ms)
+			TypeCache.Refresh (3135ms)
+				TypeCache.ScanAssembly (2506ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (399ms)
+	FinalizeReload (972ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (321ms)
+		SetupLoadedEditorAssemblies (916ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (733ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (218ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (125ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,55 +136,56 @@ Domain Reload Profiling: 997ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  5.592 seconds
-Refreshing native plugins compatible for Editor in 11.84 ms, found 3 plugins.
+- Loaded All Assemblies, in 21.998 seconds
+Refreshing native plugins compatible for Editor in 10.23 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.721 seconds
-Domain Reload Profiling: 7314ms
-	BeginReloadAssembly (1880ms)
+- Finished resetting the current domain, in  1.080 seconds
+Domain Reload Profiling: 23082ms
+	BeginReloadAssembly (197ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (3623ms)
-		LoadAssemblies (4905ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (21710ms)
+		LoadAssemblies (20166ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (499ms)
-			TypeCache.Refresh (449ms)
-				TypeCache.ScanAssembly (417ms)
-			ScanForSourceGeneratedMonoScriptInfo (39ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1722ms)
+		AnalyzeDomain (1675ms)
+			TypeCache.Refresh (1643ms)
+				TypeCache.ScanAssembly (1518ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1081ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1477ms)
+		SetupLoadedEditorAssemblies (912ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (22ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (1108ms)
-			ProcessInitializeOnLoadMethodAttributes (259ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (671ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
-Refreshing native plugins compatible for Editor in 13.24 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 6.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4288 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 75 unused Assets / (75.2 KB). Loaded Objects now: 4722.
-Memory consumption went from 150.0 MB to 149.9 MB.
-Total: 10.330000 ms (FindLiveObjects: 0.599300 ms CreateObjectMapping: 0.502000 ms MarkObjects: 9.014500 ms  DeleteObjects: 0.213000 ms)
+Unloading 4310 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (215.5 KB). Loaded Objects now: 4747.
+Memory consumption went from 160.4 MB to 160.2 MB.
+Total: 14.402700 ms (FindLiveObjects: 0.384100 ms CreateObjectMapping: 1.098800 ms MarkObjects: 12.318200 ms  DeleteObjects: 0.599600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,34 +203,684 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 150494.403318 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
-  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '655f6a7a8283b1b2757305c213b165b9') in 0.558384 seconds
+  Time since last request: 1046.166606 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/Materials
+  artifactKey: Guid(18e40eeb644af0c418d68702ded500c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/Materials using Guid(18e40eeb644af0c418d68702ded500c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '93dae0d1f969d676e5212af20c24337c') in 0.014093 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Lights
+  artifactKey: Guid(76dcef0b875207d4eb9198fbde3062ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Lights using Guid(76dcef0b875207d4eb9198fbde3062ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '34ce1bda3b108549125d97120243c7b4') in 0.000762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupHealth.FBX
+  artifactKey: Guid(eb469913d8a97714d86227946cd13546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupHealth.FBX using Guid(eb469913d8a97714d86227946cd13546) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3e82a72f3b3a7c05d21ac25818deb49b') in 0.180749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyTiltedTube02.FBX
+  artifactKey: Guid(83ca04a3b12196347a978b88ba949d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyTiltedTube02.FBX using Guid(83ca04a3b12196347a978b88ba949d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f6dcea60b8267c1e460c4603b6382731') in 0.030399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyWhirlwind01.FBX
+  artifactKey: Guid(51dc2153d84860f4da6162835ed861fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyWhirlwind01.FBX using Guid(51dc2153d84860f4da6162835ed861fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '09990695227869285f8e8f2a3f075187') in 0.027986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/downloadedstuff
+  artifactKey: Guid(76e2f5434a665e645a9148d37b24499c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff using Guid(76e2f5434a665e645a9148d37b24499c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c27014dcb66dc397e4816a5d220a45a2') in 0.000868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolySphereSmall.FBX
+  artifactKey: Guid(f23d1cdf4b40737488ce8a40b040b22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolySphereSmall.FBX using Guid(f23d1cdf4b40737488ce8a40b040b22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cac3f8cfa9c92ad9d55cc0758719e7d6') in 0.029561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyIcicle01.FBX
+  artifactKey: Guid(198685a61e3caf94b978f6a44591810d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyIcicle01.FBX using Guid(198685a61e3caf94b978f6a44591810d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eb2d31f79fed17dbd84d8fa1154d9734') in 0.027679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Lights/PolygonLight.prefab
+  artifactKey: Guid(faeb88c246231cb4aafcb2bc5b5b0427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Lights/PolygonLight.prefab using Guid(faeb88c246231cb4aafcb2bc5b5b0427) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '912af7b99dea667946b3b4a7bf586ece') in 0.003038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000820 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupBullets.FBX
+  artifactKey: Guid(3355b1e419fbb41429824765073c19ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupBullets.FBX using Guid(3355b1e419fbb41429824765073c19ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8d0f8990fa90a9433c442a794939e64c') in 0.026210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupSpeed.FBX
+  artifactKey: Guid(e367f2c4af749334ea2500ab4d843ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupSpeed.FBX using Guid(e367f2c4af749334ea2500ab4d843ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f6ab79ffafc9d2f6de2c318310daa45b') in 0.027579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/Materials/verticalgradient2.mat
+  artifactKey: Guid(46ff96323681f3345af1396814e6f9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/Materials/verticalgradient2.mat using Guid(46ff96323681f3345af1396814e6f9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ce79189376a89e442f290371460bae12') in 0.051802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupShield.FBX
+  artifactKey: Guid(6de0417d84e7b004db286f8cf83bf9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolygonPowerupShield.FBX using Guid(6de0417d84e7b004db286f8cf83bf9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ccdbf5220addee15ed90d05faedfe75b') in 0.029231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolySquareRock02.FBX
+  artifactKey: Guid(f4e8af8475c040c4ab864e5743b5c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolySquareRock02.FBX using Guid(f4e8af8475c040c4ab864e5743b5c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f2fe4affa22d56330b85c818eaedc374') in 0.026363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyBullet.FBX
+  artifactKey: Guid(5896798959845b748b9019211c7e6e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyBullet.FBX using Guid(5896798959845b748b9019211c7e6e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '166f205a8de7aa38a03199ae6baebddd') in 0.032495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolySphereMega.FBX
+  artifactKey: Guid(6385e85ec369bac4c8b20fdb297d102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolySphereMega.FBX using Guid(6385e85ec369bac4c8b20fdb297d102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2e44764faaf4c1017b5999fd342c8d11') in 0.032149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyConfetti.FBX
+  artifactKey: Guid(c85df7052f20e694ca3ed121b3ff40cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyConfetti.FBX using Guid(c85df7052f20e694ca3ed121b3ff40cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7bbe2517aca1bfcc13f4fc27f7134856') in 0.022614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/PolyGlowTubeCentered.FBX
+  artifactKey: Guid(9dbbd281c22224c48a1e0f5c0adf6797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/PolyGlowTubeCentered.FBX using Guid(9dbbd281c22224c48a1e0f5c0adf6797) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5ee7594982ee0b551cf647c8592cca4a') in 0.025954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Models/Materials/01 - Default.mat
+  artifactKey: Guid(8a494b111a0dc3447951cf1bf2320252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Models/Materials/01 - Default.mat using Guid(8a494b111a0dc3447951cf1bf2320252) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2decc52b0795311ce86826909478002c') in 0.021046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 41.110364 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/GroundSlamBlue(Clone).prefab
+  artifactKey: Guid(d93b7e7f014462d4399700d7a0e96968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/GroundSlamBlue(Clone).prefab using Guid(d93b7e7f014462d4399700d7a0e96968) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eb485c7e543c41301f4fd731cb7a956a') in 0.246093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 164.963898 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/FlamethrowerBlocky.prefab
+  artifactKey: Guid(28fdd6f49e301de42896fd085978747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/FlamethrowerBlocky.prefab using Guid(28fdd6f49e301de42896fd085978747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2f44b63df184e33b50ed45403737969b') in 0.022897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
   Time since last request: 0.000042 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '02de02c368f2da0774dce83cdb2a5a99') in 0.011035 seconds
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/IcePrison.prefab
+  artifactKey: Guid(a31ebf8641827a849ac3c2c3ac4276ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/IcePrison.prefab using Guid(a31ebf8641827a849ac3c2c3ac4276ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2d1f228a9d7084616b1d74c02ee2c910') in 0.027343 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
+Number of asset objects unloaded after import = 40
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-  artifactKey: Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '81cadb070608f1d6b7c6a4f111a99f19') in 0.048210 seconds
+  Time since last request: 0.000038 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc
+  artifactKey: Guid(6ed0f4f07cc409a4aaa8d9725fb5f603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc using Guid(6ed0f4f07cc409a4aaa8d9725fb5f603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5ebe9633573122a29263e0aebe557011') in 0.000650 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/TornadoOld.prefab
+  artifactKey: Guid(eb1a73ab1acea1642ab03a396619c5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/TornadoOld.prefab using Guid(eb1a73ab1acea1642ab03a396619c5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0d16d025a2c019646710fb7237c77269') in 0.028263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/ShapefulMuzzleflash.prefab
+  artifactKey: Guid(eb10d19913d50914d935df2bc036823a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/ShapefulMuzzleflash.prefab using Guid(eb10d19913d50914d935df2bc036823a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2bb70745cbc1cbbdc46ca96b8b417434') in 0.027084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/IceTrapSquare.prefab
+  artifactKey: Guid(0293d5c9d292d5042a0b781f50632372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/IceTrapSquare.prefab using Guid(0293d5c9d292d5042a0b781f50632372) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c2b138f634aeb386b6edf5319d68055f') in 0.108687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/LightningShield.prefab
+  artifactKey: Guid(7c1ff086b5a3f544e95e27d7cb0721ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/LightningShield.prefab using Guid(7c1ff086b5a3f544e95e27d7cb0721ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3b09e93bc1d525bda1fdb1334872dd31') in 0.023506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/RainbowDNAThingy.prefab
+  artifactKey: Guid(96614702a4e96014591f2f2e46426941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/RainbowDNAThingy.prefab using Guid(96614702a4e96014591f2f2e46426941) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '99deefddcad59d7a6bac0679e45de2ae') in 0.019842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/LightningFan.prefab
+  artifactKey: Guid(38fcfd153d66bb24e8f22db0897badf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Misc/LightningFan.prefab using Guid(38fcfd153d66bb24e8f22db0897badf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b1c76fb219c94d77ba77a29ea9798e52') in 0.023312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 116.086370 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidGlow.mat
+  artifactKey: Guid(46c46885d5e9e194ba96e80d167e7a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidGlow.mat using Guid(46c46885d5e9e194ba96e80d167e7a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '59ca748b351eb1538ea66802d51312c8') in 0.016947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 39.548535 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive
+  artifactKey: Guid(f5aa6d521d2f02048843dc787be0feff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive using Guid(f5aa6d521d2f02048843dc787be0feff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eef1132084ad79633e2df8d1d206aaff') in 0.001022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.893540 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails
+  artifactKey: Guid(47622f2f08e9fb842b3f81de4282cc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails using Guid(47622f2f08e9fb842b3f81de4282cc53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8c36309d6630ffe23eed04fb38f40cf7') in 0.000430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.471738 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails/FireFloorTrail.prefab
+  artifactKey: Guid(f55f419fb3164294081d91dff5da2717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails/FireFloorTrail.prefab using Guid(f55f419fb3164294081d91dff5da2717) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '838e05af388e4efa225d571081b59b0e') in 0.034366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails/LightningFloorTrail.prefab
+  artifactKey: Guid(7defb460755a4ad458330606f9e9fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails/LightningFloorTrail.prefab using Guid(7defb460755a4ad458330606f9e9fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ce03dcbe3b6aeed9aced78ef02e23d91') in 0.022919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails
+  artifactKey: Guid(aa78a6a1e21dfe645bc40a29140cc9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Trails/FloorTrails using Guid(aa78a6a1e21dfe645bc40a29140cc9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '40e3db1fcf4f040c18205fc9282d3ea4') in 0.000606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 16.947478 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone
+  artifactKey: Guid(841e4dab9c8453543bfa9d54cc612e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone using Guid(841e4dab9c8453543bfa9d54cc612e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cfe43c95f64d13bc0081b3fff3e38865') in 0.000601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.428295 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneBlue.prefab
+  artifactKey: Guid(67a1e2dc77bb5154186fd9188fbe6b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneBlue.prefab using Guid(67a1e2dc77bb5154186fd9188fbe6b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '251b5b4c200902e57d15353464b12cc4') in 0.028464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneRed.prefab
+  artifactKey: Guid(0ee841357ab9636429d7909efa6de250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneRed.prefab using Guid(0ee841357ab9636429d7909efa6de250) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eec2008553d0ab4c5d27a198af15c8c6') in 0.033753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZonePurple.prefab
+  artifactKey: Guid(51ecd3c285f631547a2e32d5708f59ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZonePurple.prefab using Guid(51ecd3c285f631547a2e32d5708f59ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '72effe4374b6d183b97ccaf0b48a869e') in 0.032848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneWhite.prefab
+  artifactKey: Guid(dfb5c4a4f9642b84d9240f74882b1bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/SimpleZone/SimpleZoneWhite.prefab using Guid(dfb5c4a4f9642b84d9240f74882b1bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b32df7c4d2fadfb62b35834830606abe') in 0.021896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 301.722357 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneGreen.prefab
+  artifactKey: Guid(554b25ada0c6e5a44b4d22b03eb37947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneGreen.prefab using Guid(554b25ada0c6e5a44b4d22b03eb37947) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '46129cd9658770addd98f299a8ebe3db') in 0.035184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneWhite.prefab
+  artifactKey: Guid(051b3da8446afa64c82e7a4bbd5fa78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneWhite.prefab using Guid(051b3da8446afa64c82e7a4bbd5fa78a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '315ec5b41a1d683ae8380dbf61dbb64a') in 0.023065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneYellow.prefab
+  artifactKey: Guid(89a5880db63937c4db5ac8be1cce8406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneYellow.prefab using Guid(89a5880db63937c4db5ac8be1cce8406) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6dad72f874dc0320ebd9e06172537a93') in 0.025118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone
+  artifactKey: Guid(5ba4ad3bc49c4724d846a4b82639a3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone using Guid(5ba4ad3bc49c4724d846a4b82639a3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a42dc28aebc747c11e0233498a7ca05a') in 0.001210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneRed.prefab
+  artifactKey: Guid(70d59fac261e86f489f55b465d666b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZoneRed.prefab using Guid(70d59fac261e86f489f55b465d666b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2e34efa820af082c11ea6c7553c4f6d5') in 0.031801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZonePink.prefab
+  artifactKey: Guid(41ea21e7838930946b6a59a693850dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Zone/GlowZone/GlowZonePink.prefab using Guid(41ea21e7838930946b6a59a693850dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f3666c682b8a12af77db1db4a1106b09') in 0.022742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 39.460911 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleGreen.prefab
+  artifactKey: Guid(85489c66bdcfb5c4592f9e0c9a2c3434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleGreen.prefab using Guid(85489c66bdcfb5c4592f9e0c9a2c3434) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c41fb0e0ca572f724d62849654fd522e') in 0.023989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle
+  artifactKey: Guid(8da59388deb06f4459a7073b73dc91ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle using Guid(8da59388deb06f4459a7073b73dc91ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '98c899a69f7f0e16923630bf988d6a8b') in 0.000968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleWhite.prefab
+  artifactKey: Guid(a346bb489f281f440b10d173dfcf2ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleWhite.prefab using Guid(a346bb489f281f440b10d173dfcf2ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '453ebe05a46cda963df9e371418fb96f') in 0.020404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleRed.prefab
+  artifactKey: Guid(149d1deb5e075474a8adb75af2ea44fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Interactive/Sparkle/SparkleRed.prefab using Guid(149d1deb5e075474a8adb75af2ea44fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9d99153d3a1c8fde7fc32f84a5622b2e') in 0.022353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 16.957294 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Bubbles/BubblesLava.prefab
+  artifactKey: Guid(153c2a2b0ee28de41954fed33a8840a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Bubbles/BubblesLava.prefab using Guid(153c2a2b0ee28de41954fed33a8840a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3bed683ba946c45f2e44d13372063b87') in 0.026337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 10.684608 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies/FairiesGreen.prefab
+  artifactKey: Guid(3fb60ca003e2a7c46b289bee8b14a692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies/FairiesGreen.prefab using Guid(3fb60ca003e2a7c46b289bee8b14a692) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4a1dcde61f4c69cec0804d96161e77e2') in 0.021005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies
+  artifactKey: Guid(a385a1cc546ea50448bd7648be9ecd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies using Guid(a385a1cc546ea50448bd7648be9ecd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0b6205a806d28ae2b275024f9baca721') in 0.000810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies/FairiesRed.prefab
+  artifactKey: Guid(2868c24b4aefc224984017d207d6765e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Prefabs/Environment/Fairies/FairiesRed.prefab using Guid(2868c24b4aefc224984017d207d6765e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '88c6360ecd43eae1dd16a3165d03c4c0') in 0.021796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 30.455518 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Trails.prefab
+  artifactKey: Guid(db135c043f4fbab48abfa0c49caf7634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Trails.prefab using Guid(db135c043f4fbab48abfa0c49caf7634) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '701b2b6a1f1510cc1d9d8b5f58c6370e') in 0.024012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 25.373415 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Translucent/PolyBubbleLava.mat
+  artifactKey: Guid(4dc14b9a9eb3d17449b8bd93f4ce4654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Translucent/PolyBubbleLava.mat using Guid(4dc14b9a9eb3d17449b8bd93f4ce4654) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '463338a7daa0ddb10d06fbb823ba4afa') in 0.021514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Translucent
+  artifactKey: Guid(1e994cbc6d37f6d4eb734e7bfe64b493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Translucent using Guid(1e994cbc6d37f6d4eb734e7bfe64b493) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a4438cebd4c700967e21ff983213d511') in 0.000554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 61.807045 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight
+  artifactKey: Guid(baf188011e1d8464c8714052d92374be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight using Guid(baf188011e1d8464c8714052d92374be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5c51749d75be8da80fa23ace51eb0cf5') in 0.000556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.692198 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/PolySolidCrystalMolten.mat
+  artifactKey: Guid(f3c28a544f639cc43a5c7b51157cf52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/PolySolidCrystalMolten.mat using Guid(f3c28a544f639cc43a5c7b51157cf52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1e5b594cfd787caf978a867f4af65f01') in 0.108141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 7.736750 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHoleBlue.mat
+  artifactKey: Guid(8b67ed1b53a2fd04480c88b532880e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHoleBlue.mat using Guid(8b67ed1b53a2fd04480c88b532880e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8922d3d749e557eace9ea11e2773feb9') in 0.019773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHolePink.mat
+  artifactKey: Guid(0f800fa6a92a5364e8219e32ffe7d469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHolePink.mat using Guid(0f800fa6a92a5364e8219e32ffe7d469) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '46e87639744c16120ea9cf73e3bc69e0') in 0.022844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole
+  artifactKey: Guid(27a57f73d79234a4892237810717b0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole using Guid(27a57f73d79234a4892237810717b0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '27dada4d81c955b7c86d88fba2ce8f59') in 0.001284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHoleRed.mat
+  artifactKey: Guid(d279c6dedb6e7c84ea5fbffe2a0a9349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/PolyBlackHoleRed.mat using Guid(d279c6dedb6e7c84ea5fbffe2a0a9349) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '295669fd5adc6807c00b0c49e778a667') in 0.028361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/Sphere.prefab
+  artifactKey: Guid(f166fd4fb06b39d469d1ce2569d6e3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Rimlight/Solid/BlackHole/Sphere.prefab using Guid(f166fd4fb06b39d469d1ce2569d6e3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '40fcbe5dcca11bc47fcd95514df32ac0') in 0.020109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 25.307130 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolyLitSurface.mat
+  artifactKey: Guid(be228499b18f1344caf9d8104b8bcd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolyLitSurface.mat using Guid(be228499b18f1344caf9d8104b8bcd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'df1eea8cc0981088b78cbfb3379f8e29') in 0.025607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidWood.mat
+  artifactKey: Guid(a2cae8e2afe7fe84686fb26823cf20e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidWood.mat using Guid(a2cae8e2afe7fe84686fb26823cf20e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0c00464f81ea9bb4dbbbb3cb8abcb2d7') in 0.027144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidIntense.mat
+  artifactKey: Guid(4cad1959e44286842b02291790bb6793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/PolySolidIntense.mat using Guid(4cad1959e44286842b02291790bb6793) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f152d48dd6e9d27367c459ad02f6c50e') in 0.021781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.916902 seconds.
+  path: Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/Smoke/PolySolidSmokeGrey.mat
+  artifactKey: Guid(02af81384d31b934cacbf10edbebb53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/downloadedstuff/Polygon Arsenal/Materials/Solids/Smoke/PolySolidSmokeGrey.mat using Guid(02af81384d31b934cacbf10edbebb53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '69891d0ae76c4012fcd0ca349643c8e5') in 0.020579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
