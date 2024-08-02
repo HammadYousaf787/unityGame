@@ -94,11 +94,11 @@ GameObject:
   - component: {fileID: 3487309707425613203}
   - component: {fileID: 754339591299976448}
   - component: {fileID: 4435266902880831273}
-  - component: {fileID: 8295249182629919872}
   - component: {fileID: 4351540927700089084}
+  - component: {fileID: 6276522665583133152}
   m_Layer: 3
   m_Name: Arrow_1_Red Variant 1
-  m_TagString: Untagged
+  m_TagString: arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,20 +169,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8295249182629919872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4264549441409670953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53324c5d5d141b54aa3cea664b91c046, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 0
-  tail: {fileID: 4351540927700089084}
 --- !u!96 &4351540927700089084
 TrailRenderer:
   serializedVersion: 3
@@ -204,7 +190,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 74349befaf1618b468948953edd49381, type: 2}
+  - {fileID: 2100000, guid: d552e297727de9c4d84b76f31f67922d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -243,8 +229,8 @@ TrailRenderer:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5656662
-        value: 0.10473633
+        time: 0.5710678
+        value: 0.07006836
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -252,8 +238,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.927479
-        value: 0.09359741
+        time: 0.9503062
+        value: 0.07048035
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -305,6 +291,21 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
+--- !u!114 &6276522665583133152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4264549441409670953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53324c5d5d141b54aa3cea664b91c046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 0
+  tail: {fileID: 4351540927700089084}
+  isActive: 1
 --- !u!1 &6459668190169975072
 GameObject:
   m_ObjectHideFlags: 0

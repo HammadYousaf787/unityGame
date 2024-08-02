@@ -9,6 +9,9 @@ TagManager:
   - head_enemy
   - nody_enemy
   - body_enemy
+  - bullseye
+  - target
+  - arrow
   layers:
   - Default
   - TransparentFX
