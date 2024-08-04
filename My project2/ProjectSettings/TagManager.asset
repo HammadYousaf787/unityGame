@@ -12,6 +12,7 @@ TagManager:
   - bullseye
   - target
   - arrow
+  - MAST_Holder
   layers:
   - Default
   - TransparentFX

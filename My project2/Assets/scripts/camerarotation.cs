@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
 
 
-public class MouseLookAround : MonoBehaviour
+public class camerarotation : MonoBehaviour
 {
     float rotationX = 0f;
     float rotationY = 0f;
@@ -27,11 +28,13 @@ public class MouseLookAround : MonoBehaviour
     public GameObject quiver2;
     public GameObject quiver3;
     private arrowAudio AudioScript;
+    private float health = 50;
 
 
     private void Start()
     {
-        shootPoint = transform.Find("ShootPoint");
+        Debug.Log("start");
+       shootPoint = transform.Find("ShootPoint");
         CreateArrow();
         quiver1.SetActive(true);
         as1 = GetComponent<AudioSource>();
@@ -173,5 +176,12 @@ public class MouseLookAround : MonoBehaviour
         CreateArrow();
         arrowShot = false;
         Debug.Log("in reload");
+    }
+
+    public void  HealthCut()
+    {
+        Debug.Log("health cut called");
+        health -= 2;
+        Debug.Log(health);
     }
 }

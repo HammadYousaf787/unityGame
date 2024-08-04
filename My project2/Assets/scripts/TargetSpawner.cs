@@ -4,38 +4,30 @@ using UnityEngine;
 
 public class TargetSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public GameObject Target;
     public float xRange = 10f; // Range for x position
-    public float zRange = 10f; // Range for y position
-    public float yPosition; // Fixed z position
+    public float zRange = 10f; // Range for z position
+    public float yPosition; // Fixed y position
+    public float spawnInterval = 5f; // Interval in seconds for spawning
+
     void Start()
     {
-        
+        InvokeRepeating("SpawnTarget", 0f, spawnInterval);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnTarget()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Vector3 cameraPosition = transform.position;
+        float randomX = Random.Range(-xRange, xRange);
+        float randomZ = Random.Range(-zRange, zRange);
+        float fixedY = yPosition;
 
-            float randomX = Random.Range(-xRange, xRange);
-            float randomz = Random.Range(-zRange, zRange);
-            float fixedy = yPosition;
+        // Calculate the spawn position
+        Vector3 spawnPosition = new Vector3(randomX, fixedY, randomZ);
 
-            // Calculate the spawn position
-            Vector3 spawnPosition = new Vector3(randomX, fixedy, randomz);
+        // Instantiate the object at the calculated position
+        GameObject spawnedObject = Instantiate(Target, spawnPosition, Quaternion.identity);
 
-            // Instantiate the object at the calculated position
-            GameObject spawnedObject = Instantiate(Target, spawnPosition, Quaternion.identity);
-
-            Vector3 directionToCamera = transform.position - spawnPosition;
-            spawnedObject.transform.rotation = Quaternion.LookRotation(directionToCamera);
-
-
-        }
+        Vector3 directionToCamera = transform.position - spawnPosition;
+        spawnedObject.transform.rotation = Quaternion.LookRotation(directionToCamera);
     }
 }

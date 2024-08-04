@@ -1,13 +1,22 @@
 using UnityEngine;
+using System.Collections; // Make sure this namespace is included
+using System;
+using System.Collections.Generic;
+using UnityEngine.Windows;
+
 
 public class enemyMovement : MonoBehaviour
 {
     public float speed = 1.0f;       // Speed of movement
-    public float stopDistance = 2.0f; // Distance to stop from the camera
+    public float stopDistance = 1.5f; // Distance to stop from the camera
     private Rigidbody rb;            // Rigidbody component
     bool alive = true;
     private Animator animator1;
     private float Health = 10f;
+    public Camera Cameraobj;
+    private camerarotation cameraScript;
+    bool attacking = false;
+
     void Start()
     {
         // Get the Rigidbody component attached to this GameObject
@@ -19,13 +28,32 @@ public class enemyMovement : MonoBehaviour
         }
         animator1 = GetComponent<Animator>();
         animator1.SetBool("isMoving", true);
+        Cameraobj = Camera.main;
+        cameraScript = Cameraobj.GetComponent<camerarotation>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {   
         if(collision.gameObject.CompareTag("arrow"))
         {
-            
+            GameObject collidedobj = collision.gameObject;
+            arrowscript Arrowscript = collidedobj.GetComponent<arrowscript>();
+
+            Debug.Log("collidedd obj script found");
+            if (Arrowscript.isActive == true)
+            {
+                Debug.Log("health cut will be called");
+                alive = false;
+                animator1.SetBool("isDead", true);
+                Arrowscript.isActive = false;
+                rb.isKinematic = true;
+                StartCoroutine(DestroyArrowAfterDelay(3f));
+
+            }
+
+
+
+
 
 
         }
@@ -39,9 +67,15 @@ public class enemyMovement : MonoBehaviour
 
         if (alive==true)
         {
+            bool isDancing = animator1.GetBool("isDancing");
 
+            if (isDancing)
+            {
+                // Lock the Y position to keep the character on the ground
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+            }
 
-            if (rb != null && Camera.main != null)
+            else if (rb != null && Camera.main != null)
             {
                 // Get the camera's position
                 Vector3 cameraPosition = Camera.main.transform.position;
@@ -75,9 +109,36 @@ public class enemyMovement : MonoBehaviour
                     rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * speed);
                     animator1.SetBool("isMoving", false);
                     animator1.SetBool("attackTrigger", true);
+                    if(attacking == false)
+                    {
+                        StartCoroutine(HealthCutCoroutine());
+                        
+                    }
 
                 }
             }
+
+
         }
     }
+    private IEnumerator HealthCutCoroutine()
+    {
+
+        Debug.Log("in health cut co routine");
+        attacking = true;
+        cameraScript.HealthCut();
+
+        yield return new WaitForSeconds(4f); // Wait for 4 seconds
+        attacking = false;
+
+    }
+    private IEnumerator DestroyArrowAfterDelay(float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Destroy the arrow GameObject
+        Destroy(gameObject);
+    }
+
 }

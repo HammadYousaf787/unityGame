@@ -45,6 +45,7 @@ public class enemyMove : MonoBehaviour
 
     void Update()
     {
+
         if (target != null)
         {
             // Calculate the direction from the current position to the target's position

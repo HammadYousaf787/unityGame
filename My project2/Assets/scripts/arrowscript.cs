@@ -16,19 +16,8 @@ public class arrowscript : MonoBehaviour
     {
         
         // Check if the arrow hits a wall
-        if (collision.gameObject.CompareTag("Wall"))
-        {
-            rb = GetComponent<Rigidbody>();
-            // Make the arrow a child of the wall
-
-            // Optionally disable further physics interactions
-
-            Debug.Log("Wall hit");
-
-            rb.isKinematic = true;
-            StartCoroutine(DestroyArrowAfterDelay(10f));
-        }
-        else if (collision.gameObject.CompareTag("head_enemy"))
+        
+        if (collision.gameObject.CompareTag("head_enemy"))
         {
             // Make the arrow a child of the wall
 
@@ -37,11 +26,14 @@ public class arrowscript : MonoBehaviour
             velocity = rb.velocity.magnitude;
             Transform enemyTransform = collision.transform;
             transform.SetParent(enemyTransform);
+            Collider arrowCollider = GetComponent<Collider>();
+            arrowCollider.enabled = false;
             
             Debug.Log("headShot!!");
             rb.isKinematic = true;
             tail.enabled = false;
-            StartCoroutine(DestroyArrowAfterDelay(10f));
+            isActive = false;
+            StartCoroutine(DestroyArrowAfterDelay(3f));
         }
         else if (collision.gameObject.CompareTag("body_enemy"))
         {
@@ -49,14 +41,16 @@ public class arrowscript : MonoBehaviour
 
             // Optionally disable further physics interactions
             rb = GetComponent<Rigidbody>();
-            velocity = rb.velocity.magnitude;
-            Debug.Log(velocity);
             Transform enemyTransform = collision.transform;
             transform.SetParent(enemyTransform);
-            Debug.Log("bodyShot!!!");
+            Collider arrowCollider = GetComponent<Collider>();
+            arrowCollider.enabled = false;
+            
             rb.isKinematic = true;
+
+            
             tail.enabled = false;
-            StartCoroutine(DestroyArrowAfterDelay(10f));
+            StartCoroutine(DestroyArrowAfterDelay(3f));
         }
         
 
