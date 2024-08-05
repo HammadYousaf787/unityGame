@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.39f1 (4e1b0f82c39a) revision 5118735'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 7860 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16225 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\unity\2022.3.39f1\Editor\Unity.exe
+D:\Unity\2022.3.39f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker3
 -projectPath
-D:/unityprojects/My project2
+D:/githubRepository/unityGame/My project2
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-60648
-Successfully changed project path to: D:/unityprojects/My project2
-D:/unityprojects/My project2
+62382
+Successfully changed project path to: D:/githubRepository/unityGame/My project2
+D:/githubRepository/unityGame/My project2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,85 +49,71 @@ D:/unityprojects/My project2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19988]  Target information:
+Player connection [15708]  Target information:
 
-Player connection [19988]  * "[IP] 192.168.18.212 [Port] 0 [Flags] 2 [Guid] 2907323602 [EditorId] 2907323602 [Version] 1048832 [Id] WindowsEditor(7,Hammads-Lappy) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15708]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3113470904 [EditorId] 3113470904 [Version] 1048832 [Id] WindowsEditor(7,Zaeems-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [19988] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [19988] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 484.11 ms, found 3 plugins.
+Player connection [15708]  * "[IP] 172.17.208.1 [Port] 0 [Flags] 2 [Guid] 3113470904 [EditorId] 3113470904 [Version] 1048832 [Id] WindowsEditor(7,Zaeems-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15708]  * "[IP] 192.168.1.8 [Port] 0 [Flags] 2 [Guid] 3113470904 [EditorId] 3113470904 [Version] 1048832 [Id] WindowsEditor(7,Zaeems-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15708] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15708] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 29.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.39f1 (4e1b0f82c39a)
-[Subsystems] Discovering subsystems at path D:/unity/2022.3.39f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/unityprojects/My project2/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/githubRepository/unityGame/My project2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f9d)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   NVIDIA
-    VRAM:     3950 MB
-    Driver:   31.0.15.4633
+    VRAM:     3935 MB
+    Driver:   32.0.15.5612
 Initialize mono
-Mono path[0] = 'D:/unity/2022.3.39f1/Editor/Data/Managed'
-Mono path[1] = 'D:/unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Mono path[0] = 'D:/Unity/2022.3.39f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/unity/2022.3.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: D:/unity/2022.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003817 seconds.
-- Loaded All Assemblies, in  2.785 seconds
+Register platform support module: D:/Unity/2022.3.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003945 seconds.
+- Loaded All Assemblies, in  1.192 seconds
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Android SDK Build-tools component is not found. Make sure all tools are installed in the SDK manager.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.Android.AndroidSDKTools:UpdateToolsDirectories ()
-UnityEditor.Android.AndroidSDKTools:.ctor (string)
-UnityEditor.Android.AndroidSDKTools:CreateAndroidSDKTools (string)
-UnityEditor.Android.AndroidSDKTools:GetInstance<UnityEditor.Android.AndroidSDKTools> (UnityEditor.Android.AndroidSDKTools/InstanceCreator)
-UnityEditor.Android.AndroidSDKTools:GetInstance ()
-UnityEditor.Android.AndroidDeploymentTargetsExtension:GetMainThreadContext (bool)
-UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
-UnityEditor.Android.TargetExtension:OnLoad ()
-UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
-
-Android Extension - Scanning For ADB Devices 787 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.169 seconds
-Domain Reload Profiling: 3954ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.406 seconds
+Domain Reload Profiling: 1598ms
+	BeginReloadAssembly (223ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (705ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (1894ms)
-		LoadAssemblies (107ms)
+	RebuildCommonClasses (377ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (507ms)
+		LoadAssemblies (222ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1889ms)
-			TypeCache.Refresh (1888ms)
-				TypeCache.ScanAssembly (1858ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (504ms)
+			TypeCache.Refresh (503ms)
+				TypeCache.ScanAssembly (482ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1169ms)
+	FinalizeReload (407ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1123ms)
+		SetupLoadedEditorAssemblies (323ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (933ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (106ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (224ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -136,56 +122,55 @@ Domain Reload Profiling: 3954ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.428 seconds
-Refreshing native plugins compatible for Editor in 9.51 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.000 seconds
+Refreshing native plugins compatible for Editor in 8.20 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.867 seconds
-Domain Reload Profiling: 2295ms
-	BeginReloadAssembly (208ms)
+- Finished resetting the current domain, in  0.985 seconds
+Domain Reload Profiling: 1985ms
+	BeginReloadAssembly (230ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (1114ms)
-		LoadAssemblies (548ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (668ms)
+		LoadAssemblies (469ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (693ms)
-			TypeCache.Refresh (649ms)
-				TypeCache.ScanAssembly (513ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (868ms)
+		AnalyzeDomain (347ms)
+			TypeCache.Refresh (311ms)
+				TypeCache.ScanAssembly (205ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (986ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (740ms)
+		SetupLoadedEditorAssemblies (821ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (55ms)
-			ProcessInitializeOnLoadAttributes (494ms)
-			ProcessInitializeOnLoadMethodAttributes (167ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (572ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 4.90 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.36 seconds
+Refreshing native plugins compatible for Editor in 9.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4368 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 79 unused Assets / (488.8 KB). Loaded Objects now: 4808.
-Memory consumption went from 166.0 MB to 165.6 MB.
-Total: 6.397200 ms (FindLiveObjects: 0.251800 ms CreateObjectMapping: 0.123100 ms MarkObjects: 5.651400 ms  DeleteObjects: 0.370100 ms)
+Unloading 81 unused Assets / (0.7 MB). Loaded Objects now: 4803.
+Memory consumption went from 160.3 MB to 159.6 MB.
+Total: 8.945000 ms (FindLiveObjects: 0.348400 ms CreateObjectMapping: 0.398800 ms MarkObjects: 7.766600 ms  DeleteObjects: 0.430000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -202,274 +187,72 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 41125.872870 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_1_Gray.prefab
-  artifactKey: Guid(6d16b902114240a43a9d573ef7ed1595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_1_Gray.prefab using Guid(6d16b902114240a43a9d573ef7ed1595) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '540e7cb7e73ef9c6e602a7caf6e5945c') in 0.149101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 50
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_2_Brown.prefab
-  artifactKey: Guid(41b13a69020d1524cb8caca0fbf29e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_2_Brown.prefab using Guid(41b13a69020d1524cb8caca0fbf29e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f883de886ffd98a0e990ac9408b7e648') in 0.032645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_4_White.prefab
-  artifactKey: Guid(9b98367bd6d71e642b80e768c5df4261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_4_White.prefab using Guid(9b98367bd6d71e642b80e768c5df4261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'fc50b7b6de1afc846572be57dc6a69c0') in 0.033674 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_4_Black.prefab
-  artifactKey: Guid(c46c878990d6c174eb1eea795abdd902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_4_Black.prefab using Guid(c46c878990d6c174eb1eea795abdd902) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '23561c04ef9eba5eb9474af2f06f830f') in 0.033600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_2_Red.prefab
-  artifactKey: Guid(f7d77dfb6617ccc49b8f60e0be2e2654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_2_Red.prefab using Guid(f7d77dfb6617ccc49b8f60e0be2e2654) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '71ed9c681cae393416c96c1b91e62176') in 0.036737 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_3_Brown.prefab
-  artifactKey: Guid(d2e03cbf296ad2a4ab578edea285433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Bridges/Bridge_3_Brown.prefab using Guid(d2e03cbf296ad2a4ab578edea285433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '8febb34b9f8cc2c6d33670f50eec6eab') in 0.037324 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 41
-========================================================================
-Received Import Request.
-  Time since last request: 54.126853 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_1_Red.prefab
-  artifactKey: Guid(86ca0c53aa35aa947874bff73b08c83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_1_Red.prefab using Guid(86ca0c53aa35aa947874bff73b08c83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd5b5c7977b2ec58a3e7db411747f541') in 0.049838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Blue.prefab
-  artifactKey: Guid(191c7f4cd789d2649a7d7724b1db4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Blue.prefab using Guid(191c7f4cd789d2649a7d7724b1db4e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'a1d31cd6c0f48d17fac7754eb45653f3') in 0.034017 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_1_Yellow.prefab
-  artifactKey: Guid(6fcb27a0bee816f4985e82cd0e6de1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_1_Yellow.prefab using Guid(6fcb27a0bee816f4985e82cd0e6de1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7a80180e7cb0752f62dbbcd007a2c319') in 0.030686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_4_Red.prefab
-  artifactKey: Guid(4fe8944f7bed4bd48a19bd421694ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_4_Red.prefab using Guid(4fe8944f7bed4bd48a19bd421694ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '0de8352c763e27ac26be43265a427fa7') in 0.027740 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Red.prefab
-  artifactKey: Guid(adcdcd53237b80f4298748456b95adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Red.prefab using Guid(adcdcd53237b80f4298748456b95adfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '2e0841bfb88928a91a83ae592f87ccc7') in 0.029347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_5_Yellow.prefab
-  artifactKey: Guid(6e6c5c2fa977dc14daf206c052a307ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_5_Yellow.prefab using Guid(6e6c5c2fa977dc14daf206c052a307ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '59c1e02c712df157a593698efa7e3442') in 0.033435 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 41
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Yellow.prefab
-  artifactKey: Guid(dd7b4e5998bbd0b449bc31fa23bcf2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_3_Yellow.prefab using Guid(dd7b4e5998bbd0b449bc31fa23bcf2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '47b3a2dbd1372c81457f494967a46712') in 0.030599 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_2_Red.prefab
-  artifactKey: Guid(50cac7f509fa3f74e98391d1274675ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Trees/Tree_2_Red.prefab using Guid(50cac7f509fa3f74e98391d1274675ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'a8820759f15bf104295dae939b61e30b') in 0.034062 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 144.961198 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Green.prefab
-  artifactKey: Guid(bbbad0c9eeb28bd4ab5216d9590c0333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Green.prefab using Guid(bbbad0c9eeb28bd4ab5216d9590c0333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '856eff9462bbdfcb80c8b730e0b5f9c7') in 0.033430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_2_Red.prefab
-  artifactKey: Guid(81a64ce057278974a87fbadcfecdc399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_2_Red.prefab using Guid(81a64ce057278974a87fbadcfecdc399) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f804af9e9283b44656b5c61f8c54db09') in 0.033340 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Yellow.prefab
-  artifactKey: Guid(493e225ee689e1443afa07f50239cdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Yellow.prefab using Guid(493e225ee689e1443afa07f50239cdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '00c4c457a93f0115659c3f69c35e148c') in 0.035516 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Blue.prefab
-  artifactKey: Guid(6e5f0f623024ca84d9b5b0ea5f5bd121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Blue.prefab using Guid(6e5f0f623024ca84d9b5b0ea5f5bd121) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'd12aae9e8c803ad4a88c34c0ed10c0b4') in 0.030912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Red.prefab
-  artifactKey: Guid(eaba68e17f3b25944ac7f792fcf02fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Red.prefab using Guid(eaba68e17f3b25944ac7f792fcf02fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '70a00ec120f8cb9a118aed205ed271bc') in 0.027412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_5_Red.prefab
-  artifactKey: Guid(e0b071b4bdd638742bd62f2c08901803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_5_Red.prefab using Guid(e0b071b4bdd638742bd62f2c08901803) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'd61dc337841e5992e83e59187cb2340f') in 0.028955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses
-  artifactKey: Guid(66dbe5138f71327429af28ccfc6b711e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses using Guid(66dbe5138f71327429af28ccfc6b711e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '54642d71c215d4ea624db2c282ca47d7') in 0.001715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Red.prefab
-  artifactKey: Guid(3f70efc98dd9bcc45b4ed0e37f4ed0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_1_Red.prefab using Guid(3f70efc98dd9bcc45b4ed0e37f4ed0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '50792148119897115be0c4a2c5ecbe33') in 0.036672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_2_Yellow.prefab
-  artifactKey: Guid(fa0cd5c19e66a154395c2f58be05406b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_2_Yellow.prefab using Guid(fa0cd5c19e66a154395c2f58be05406b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f4c623efd9e74658d517cd5d2fe69141') in 0.028034 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Yellow.prefab
-  artifactKey: Guid(9cba144e3bd459049ae726f3860166dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_4_Yellow.prefab using Guid(9cba144e3bd459049ae726f3860166dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7fac437b2cb5fa5263276de253c169bb') in 0.033817 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_5_Yellow.prefab
-  artifactKey: Guid(0925c016172c2b84dbea1ddf75105889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_5_Yellow.prefab using Guid(0925c016172c2b84dbea1ddf75105889) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '25d14d18dee0ff6d82e8c20c8830cf5a') in 0.030082 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_3_Blue.prefab
-  artifactKey: Guid(efafc288c69b6804690b6258251f9561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_3_Blue.prefab using Guid(efafc288c69b6804690b6258251f9561) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '6b7ca525172a0950750908c8c503011b') in 0.031238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_3_Yellow.prefab
-  artifactKey: Guid(3bcc2ea67bf442d4587976f5f0ec7ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AA Low Poly Medieval Environment/Prefabs/Grasses/Grass_3_Yellow.prefab using Guid(3bcc2ea67bf442d4587976f5f0ec7ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '369089bc437516d590f4b49ccd22f81d') in 0.028839 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.822 seconds
+Refreshing native plugins compatible for Editor in 14.16 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.784 seconds
+Domain Reload Profiling: 2605ms
+	BeginReloadAssembly (301ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (424ms)
+		LoadAssemblies (541ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1784ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (914ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (608ms)
+			ProcessInitializeOnLoadMethodAttributes (213ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 8.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4336 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (0.7 MB). Loaded Objects now: 4806.
+Memory consumption went from 152.8 MB to 152.1 MB.
+Total: 7.266100 ms (FindLiveObjects: 0.317300 ms CreateObjectMapping: 0.280200 ms MarkObjects: 6.267300 ms  DeleteObjects: 0.400300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
