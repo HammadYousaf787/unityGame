@@ -17,7 +17,7 @@ public class camerarotation : MonoBehaviour
     private Transform shootPoint; // Point from which to instantiate the arrow
     private GameObject currentArrow;
     private TrailRenderer tail;
-    private float arrowSpawnTimer = 2f;
+    public float arrowSpawnTimer = 2f;
     bool arrowShot = false;
     float starttime;
     private AudioSource as1;
@@ -28,7 +28,7 @@ public class camerarotation : MonoBehaviour
     public GameObject quiver2;
     public GameObject quiver3;
     private arrowAudio AudioScript;
-    private float health = 50;
+    public float health = 50;
 
 
     private void Start()

@@ -16,6 +16,7 @@ public class enemyMovement : MonoBehaviour
     public Camera Cameraobj;
     private camerarotation cameraScript;
     bool attacking = false;
+    public bool Dancing = false;
 
     void Start()
     {
@@ -67,17 +68,21 @@ public class enemyMovement : MonoBehaviour
 
         if (alive==true)
         {
-            bool isDancing = animator1.GetBool("isDancing");
 
-            if (isDancing)
+            if (Dancing)
             {
                 // Lock the Y position to keep the character on the ground
-                rb.constraints = RigidbodyConstraints.FreezeAll;
+                rb.constraints = RigidbodyConstraints.FreezePositionY;
+                animator1.SetBool("isDancing", true);
             }
+          
 
-            else if (rb != null && Camera.main != null)
+            else
             {
                 // Get the camera's position
+                animator1.SetBool("isDancing", false);
+
+
                 Vector3 cameraPosition = Camera.main.transform.position;
 
                 // Calculate the direction from the object's position to the camera
@@ -88,7 +93,9 @@ public class enemyMovement : MonoBehaviour
 
                 // Move the object towards the camera
                 if (distanceToCamera > stopDistance)
-                {
+                {   
+                    animator1.SetBool("isMoving", true);
+
                     // Move the object in the direction of the camera
                     Vector3 moveDirection = direction * speed * Time.fixedDeltaTime;
                     rb.MovePosition(rb.position + moveDirection);
