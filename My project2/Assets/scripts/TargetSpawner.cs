@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TargetSpawner : MonoBehaviour
 {
@@ -10,13 +11,40 @@ public class TargetSpawner : MonoBehaviour
     public float yPosition; // Fixed y position
     public float spawnInterval = 5f; // Interval in seconds for spawning
     public int maxSpawnCount = 5; // Maximum number of targets to spawn
+    public string nextLevelName; // Name of the next level to load
 
     private int spawnCount = 0; // Counter for number of targets spawned
+    private float elapsedTime = 0f; // Timer to track elapsed time
 
     void Start()
     {
         // Start the spawning process
         InvokeRepeating("SpawnTarget", 0f, spawnInterval);
+    }
+
+    void Update()
+    {
+        // Update the elapsed time
+        elapsedTime += Time.deltaTime;
+
+        // Check if the conditions are met
+<<<<<<< HEAD
+        if (spawnCount >= maxSpawnCount)
+        {
+            // Load the next level
+            GameObject zombie = GameObject.FindGameObjectWithTag("body_enemy");
+            if(zombie == null)
+            {
+                LoadNextLevel();
+
+            }
+=======
+        if (spawnCount >= maxSpawnCount && elapsedTime > 30f)
+        {
+            // Load the next level
+            LoadNextLevel();
+>>>>>>> 67361f41b5ab93257b692c7cb29dfd0d530de5df
+        }
     }
 
     void SpawnTarget()
@@ -46,5 +74,11 @@ public class TargetSpawner : MonoBehaviour
 
         // Increment the spawn counter
         spawnCount++;
+    }
+
+    void LoadNextLevel()
+    {
+        // Load the next level
+        SceneManager.LoadScene(nextLevelName);
     }
 }

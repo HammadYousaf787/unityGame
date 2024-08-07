@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore large build artifacts
+/My project2/Library/Bee/artifacts/objcopy_5lmi/libil2cpp.dbg.so
+/My project2/Library/Bee/artifacts/objcopy_b9ry/libil2cpp.dbg.so

@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Windows;
 
 
@@ -10,7 +12,7 @@ public class camerarotation : MonoBehaviour
     float rotationX = 0f;
     float rotationY = 0f;
 
-    public Vector2 sensitivity = Vector2.one * 360f;
+    public Vector2 sensitivity = Vector2.one * 60f;
     public Rigidbody rb;
     float shootForce;// Adjust this as needed
     public GameObject arrowPrefab; // Prefab of the object to shoot
@@ -29,7 +31,9 @@ public class camerarotation : MonoBehaviour
     public GameObject quiver3;
     private arrowAudio AudioScript;
     public float health = 50;
-
+    public Joystick ControllerStick;
+    public Button ShootButton;
+    public Slider healthbar;
 
     private void Start()
     {
@@ -48,27 +52,39 @@ public class camerarotation : MonoBehaviour
     void Update()
     {
         // Camera rotation
-        rotationY += UnityEngine.Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity.x;
-        rotationX += UnityEngine.Input.GetAxis("Mouse Y") * Time.deltaTime * -1 * sensitivity.y;
+        rotationY += ControllerStick.Horizontal * Time.deltaTime * sensitivity.x;
+        rotationX += ControllerStick.Vertical * Time.deltaTime * -1 * sensitivity.y;
         transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
         rotationX = Mathf.Clamp(rotationX, -80f, 80f);
         transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
-
+        if (health > 50)
+        {
+            healthbar.maxValue = health;
+        }
+        healthbar.value = health;
 
         if (currentArrow != null)
         {
             currentArrow.transform.position = shootPoint.position;
             currentArrow.transform.rotation = shootPoint.rotation;
         }
-
+        
         // Shoot the arrow when left mouse button is clicked
         if (UnityEngine.Input.GetMouseButtonDown(0))
         {
-            if (arrowShot == false)
-            {
-                starttime = Time.time;
+            Vector3 mousePosition = UnityEngine.Input.mousePosition;
+            float rightSideThresholdX = Screen.width * 0.5f;
 
+            // Check if the mouse is on the right side of the screen
+            if (mousePosition.x > rightSideThresholdX)
+            {
+                if (arrowShot == false)
+                {
+                    starttime = Time.time;
+
+                }
             }
+            
         
            
             
@@ -76,50 +92,62 @@ public class camerarotation : MonoBehaviour
         }
         if (UnityEngine.Input.GetMouseButtonUp(0))
         {
-            if (arrowShot == false)
-            {
-                endtime = Time.time;
-                quiver1.SetActive(false);
-                if ((endtime - starttime) > 2)
-                {
-                    quiver3.SetActive(true);
-                    shootForce = 25f;
-                    Debug.Log(" larger than 2");
-                    AudioScript.playArrowSound(true);
-                    ShootArrow();
-                }
-                else if ((endtime - starttime) > 1.5)
-                {
-                    quiver3.SetActive(true);
-                    shootForce = 20f;
-                    Debug.Log(" larger than 1.5");
-                    AudioScript.playArrowSound(true);
-                    ShootArrow();
-                }
-                else if ((endtime - starttime) > 1)
-                {
-                    quiver2.SetActive(true);
-                    shootForce = 15f;
-                    Debug.Log(" larger than 1");
-                    AudioScript.playArrowSound(false);
-                    ShootArrow();
-                }
-                else if ((endtime - starttime) < 1)
-                {
-                    quiver2.SetActive(true);
-                    shootForce = 10f;
-                    AudioScript.playArrowSound(false);
-                    Debug.Log(" smaller than 1");
-                    ShootArrow();
-                }
-                
-                
-                starttime = 0f;
-                endtime = 0f;
-            }
+            Vector3 mousePosition = UnityEngine.Input.mousePosition;
+            float rightSideThresholdX = Screen.width * 0.5f;
 
-           
-            StartCoroutine(ResetQuivers());
+            // Check if the mouse is on the right side of the screen
+            if (mousePosition.x > rightSideThresholdX)
+            {
+                if (arrowShot == false)
+                {
+                    endtime = Time.time;
+                    quiver1.SetActive(false);
+                    if ((endtime - starttime) > 2)
+                    {
+                        quiver3.SetActive(true);
+                        shootForce = 25f;
+                        Debug.Log(" larger than 2");
+                        AudioScript.playArrowSound(true);
+                        ShootArrow();
+                    }
+                    else if ((endtime - starttime) > 1.5)
+                    {
+                        quiver3.SetActive(true);
+                        shootForce = 20f;
+                        Debug.Log(" larger than 1.5");
+                        AudioScript.playArrowSound(true);
+                        ShootArrow();
+                    }
+                    else if ((endtime - starttime) > 1)
+                    {
+                        quiver2.SetActive(true);
+                        shootForce = 15f;
+                        Debug.Log(" larger than 1");
+                        AudioScript.playArrowSound(false);
+                        ShootArrow();
+                    }
+                    else if ((endtime - starttime) < 1)
+                    {
+                        quiver2.SetActive(true);
+                        shootForce = 10f;
+                        AudioScript.playArrowSound(false);
+                        Debug.Log(" smaller than 1");
+                        ShootArrow();
+                    }
+
+
+                    starttime = 0f;
+                    endtime = 0f;
+                }
+
+
+                StartCoroutine(ResetQuivers());
+
+            }
+        }
+            
+        if(health<= 0)
+        {
 
         }
 
@@ -157,6 +185,8 @@ public class camerarotation : MonoBehaviour
         StartCoroutine(reload());
 
     }
+
+    
 
     void CreateArrow()
     {

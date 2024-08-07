@@ -654,6 +654,7 @@ MonoBehaviour:
   quiver1: {fileID: 2106792944}
   quiver2: {fileID: 857285191}
   quiver3: {fileID: 473885410}
+  health: 50
 --- !u!81 &512864497
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1345,6 +1346,7 @@ MonoBehaviour:
   yPosition: 0
   spawnInterval: 4
   maxSpawnCount: 15
+  nextLevelName: WonLevel3
 --- !u!1001 &1347080059
 PrefabInstance:
   m_ObjectHideFlags: 0

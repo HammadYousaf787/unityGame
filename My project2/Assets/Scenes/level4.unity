@@ -328,6 +328,7 @@ MonoBehaviour:
   yPosition: 0
   spawnInterval: 4
   maxSpawnCount: 15
+  nextLevelName: WonLevel4
 --- !u!1 &251286675
 GameObject:
   m_ObjectHideFlags: 0

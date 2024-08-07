@@ -11,4 +11,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: eb2c74f88e5f17a458f9f0f97e02d51d
+  - enabled: 1
+    path: Assets/Scenes/level3.unity
+    guid: 6e6d2493673d0814d8588bd370de1fa9
+  - enabled: 1
+    path: Assets/Scenes/level4.unity
+    guid: a22b1fbbcdcc3c94cba979b6ceaaacea
+  - enabled: 1
+    path: Assets/Scenes/level5.unity
+    guid: c49ea889270cd2c4bbf206d6f9513e87
+  - enabled: 1
+    path: Assets/Scenes/LostLevel1.unity
+    guid: 43d4b076fd3f5284fbf02c6c304c7768
+  - enabled: 1
+    path: Assets/Scenes/LostLevel2.unity
+    guid: 596ea4b283c6f0d4c890f31b105af646
+  - enabled: 1
+    path: Assets/Scenes/LostLevel3.unity
+    guid: 9ab9f87029697a44090ad18986a01986
+  - enabled: 1
+    path: Assets/Scenes/LostLevel4.unity
+    guid: 60923aae055aeb64aacaf1e8d51c0604
+  - enabled: 1
+    path: Assets/Scenes/LostLevel5.unity
+    guid: 45bf784562044c34f81b77f81d95a311
+  - enabled: 1
+    path: Assets/Scenes/WonLevel1.unity
+    guid: d62263e94c93a0c42835d8dc059a3902
+  - enabled: 1
+    path: Assets/Scenes/WonLevel2.unity
+    guid: bee1f7174f7d8c54c9b9b424dea53129
+  - enabled: 1
+    path: Assets/Scenes/WonLevel3.unity
+    guid: 4e3d32c5b73d0e841a51d73115e1090a
+  - enabled: 1
+    path: Assets/Scenes/WonLevel4.unity
+    guid: 01512f7a5e0f93f4fa4226d759928019
+  - enabled: 1
+    path: Assets/Scenes/WonLevel5.unity
+    guid: 2cb03b20890841847a89c32e382696b4
   m_configObjects: {}
