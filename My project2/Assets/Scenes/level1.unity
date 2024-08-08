@@ -959,6 +959,7 @@ MonoBehaviour:
   spawnInterval: 5
   maxSpawnCount: 5
   nextLevelName: WonLevel1
+  lostSceneName: LostLevel1
 --- !u!4 &613594313
 Transform:
   m_ObjectHideFlags: 0

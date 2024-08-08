@@ -72,7 +72,8 @@ public class enemyMovement : MonoBehaviour
             if (Dancing)
             {
                 // Lock the Y position to keep the character on the ground
-                rb.constraints = RigidbodyConstraints.FreezePositionY;
+                rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
                 animator1.SetBool("isDancing", true);
             }
           
@@ -82,7 +83,7 @@ public class enemyMovement : MonoBehaviour
                 // Get the camera's position
                 animator1.SetBool("isDancing", false);
 
-
+                rb.constraints = RigidbodyConstraints.FreezePositionY;
                 Vector3 cameraPosition = Camera.main.transform.position;
 
                 // Calculate the direction from the object's position to the camera
@@ -114,6 +115,8 @@ public class enemyMovement : MonoBehaviour
                     // Rotate the object to face the camera even when stopped
                     Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
                     rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * speed);
+                    rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
                     animator1.SetBool("isMoving", false);
                     animator1.SetBool("attackTrigger", true);
                     if(attacking == false)

@@ -12,11 +12,19 @@ public class LevelControllerScript : MonoBehaviour
     public float delayBeforeEnabling = 10f; // Time in seconds before enabling the PowerUps GameObject
     private GameObject powerUpsObject;
     public float delayBeforeDancingEnds = 10f;
+    public AudioSource powerUpAudioSrc;
+    public AudioClip startAudio;
+    public AudioClip selectedAudio;
+    public AudioClip MusicAudio;
 
 
 
     void Start()
     {
+        powerUpAudioSrc.clip = startAudio;
+        powerUpAudioSrc.Play();
+        powerUpAudioSrc.clip = selectedAudio;
+        Debug.Log("heyyyy");
         MainPlayerScript = Camera.main.GetComponent<camerarotation>();
         if(MainPlayerScript == null)
         {
@@ -35,17 +43,25 @@ public class LevelControllerScript : MonoBehaviour
     void Update()
     {
         if (HealthPowerUp)
-        {
+        {   
+
             Debug.Log("Health power up in levelController is true");
             MainPlayerScript.health += 50;
             powerUpsObject.SetActive(false);
             HealthPowerUp = false;
+            powerUpAudioSrc.Play();
         }
         else if (MusicPowerUp)
         {
             Debug.Log("Music power up in levelController is true");
+            MusicPowerUp = false;
             StartCoroutine(SetZombiesDancingCoroutine(true, delayBeforeDancingEnds));
+            powerUpAudioSrc.Play();
             powerUpsObject.SetActive(false);
+            powerUpAudioSrc.clip = MusicAudio;
+            StartCoroutine(PlayAudioForDuration(15f));
+
+
 
         }
         else if (ReloadSpeedPowerUp)
@@ -55,6 +71,7 @@ public class LevelControllerScript : MonoBehaviour
             MainPlayerScript.arrowSpawnTimer = 0.5f;
             powerUpsObject.SetActive(false);
             ReloadSpeedPowerUp = false;
+            powerUpAudioSrc.Play();
 
          
         }
@@ -102,10 +119,11 @@ public class LevelControllerScript : MonoBehaviour
         }
 
     }
-    void SetZombiesDancing(bool isDancing)
+    private IEnumerator PlayAudioForDuration(float duration)
     {
-        
-
-       
+        powerUpAudioSrc.Play();
+        yield return new WaitForSeconds(duration);
+        powerUpAudioSrc.Stop();
     }
+
 }

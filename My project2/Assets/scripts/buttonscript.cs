@@ -16,5 +16,4 @@ public class buttonscript : MonoBehaviour
         
     }
 
-    private void 
 }

@@ -420,6 +420,7 @@
 "Assets/scripts/levelController.cs"
 "Assets/scripts/LevelWonUI.cs"
 "Assets/scripts/LossScreenUI.cs"
+"Assets/scripts/powerupAudioScript.cs"
 "Assets/scripts/powerupsScript.cs"
 "Assets/scripts/quiverScript.cs"
 "Assets/scripts/ReloadScript.cs"

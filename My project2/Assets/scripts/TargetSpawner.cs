@@ -12,14 +12,27 @@ public class TargetSpawner : MonoBehaviour
     public float spawnInterval = 5f; // Interval in seconds for spawning
     public int maxSpawnCount = 5; // Maximum number of targets to spawn
     public string nextLevelName; // Name of the next level to load
+    public string lostSceneName; // Name of the scene to load when the player loses
 
     private int spawnCount = 0; // Counter for number of targets spawned
     private float elapsedTime = 0f; // Timer to track elapsed time
+    private camerarotation player; // Reference to the player's camera rotation script
 
     void Start()
     {
         // Start the spawning process
         InvokeRepeating("SpawnTarget", 0f, spawnInterval);
+
+        // Find the player's camera and get the camerarotation component
+        GameObject playerObject = Camera.main.gameObject;
+        if (playerObject != null)
+        {
+            player = playerObject.GetComponent<camerarotation>();
+        }
+        else
+        {
+            Debug.LogError("Player's camera not found!");
+        }
     }
 
     void Update()
@@ -27,23 +40,21 @@ public class TargetSpawner : MonoBehaviour
         // Update the elapsed time
         elapsedTime += Time.deltaTime;
 
-        // Check if the conditions are met
-<<<<<<< HEAD
+        // Check if the player has lost
+        if (player != null && player.health <= 0)
+        {
+            LoadLostScene();
+        }
+
+        // Check if the conditions are met to load the next level
         if (spawnCount >= maxSpawnCount)
         {
-            // Load the next level
+            // Check if there are no zombies left
             GameObject zombie = GameObject.FindGameObjectWithTag("body_enemy");
-            if(zombie == null)
+            if (zombie == null)
             {
                 LoadNextLevel();
-
             }
-=======
-        if (spawnCount >= maxSpawnCount && elapsedTime > 30f)
-        {
-            // Load the next level
-            LoadNextLevel();
->>>>>>> 67361f41b5ab93257b692c7cb29dfd0d530de5df
         }
     }
 
@@ -80,5 +91,11 @@ public class TargetSpawner : MonoBehaviour
     {
         // Load the next level
         SceneManager.LoadScene(nextLevelName);
+    }
+
+    void LoadLostScene()
+    {
+        // Load the lost scene
+        SceneManager.LoadScene(lostSceneName);
     }
 }
